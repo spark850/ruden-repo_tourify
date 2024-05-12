@@ -1,0 +1,201 @@
+@import "colours";
+
+.signup-form, .login-form{
+    background-color: $gray_card;
+    max-width: 40%;
+    margin: 8rem auto;
+    padding: 4rem 2rem 2rem 2rem;
+    border-radius: 0.5rem;
+    border: solid 2px black;
+    
+    h1{
+        margin-bottom: 1.5rem;
+        font-size: 2.2rem;
+        text-align: center;
+        font-family: 'Abril Fatface';
+    }
+
+    label{
+        font-size: 1rem;
+        font-weight: 450;
+    }
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        row-gap: 0.75rem;
+    }
+
+    .passwordInput{
+        
+        > div{
+            position: relative;
+
+            img{
+                cursor: pointer;
+                position: absolute;
+                top: 0.75rem;
+                right: 1.5rem;
+            }
+
+            a{
+                position: absolute;
+                bottom: -0.25rem;
+                right: 0.5rem;
+                color: $mid_blue;
+                font-size: 0.75rem;
+                text-align: right; 
+                cursor: pointer;
+                transition: all 100ms;
+            }
+    
+            a:hover{
+                color: $dark_blue;
+                font-weight: 500;
+                transform: translateX(0);
+            }
+        }
+    }
+
+    input{
+        width: 98%;
+        border-radius: 0.5rem;
+        border: 1px solid darkgray;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1.25rem;
+        border: solid 1px black;
+        box-shadow: 1px 1px 5px lightgray;
+        font-size: 0.9rem;
+    }
+
+    .account{
+        text-align: center;
+
+        button{
+            margin: 3rem auto 2rem auto;
+            padding: 0.35rem 3rem;
+            border-radius: 0.25rem;
+            border: none;
+            background: $dark_blue;
+            color: white;
+            box-shadow: 1px 1px 5px lightgray;
+            transition: transform 1s;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: lighten($dark_blue, 10);
+        }
+
+        button:active{
+            background: darken($dark_blue, 5);
+        }
+
+        p{
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-top: 0;
+
+            a{
+                color: $dark_blue;
+                text-underline-offset: 0.1rem;
+            }
+
+            a:hover{
+                opacity: 0.75;
+            }
+        }
+    }
+
+    
+}
+
+.resetPass{
+
+    > p:first-of-type{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .account{
+
+        button{
+            margin: 2rem auto 2rem auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .signup-form{
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .login-form{
+        max-width: 50%;
+    }
+
+    .signup-form{
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .login-form{
+        max-width: 65%;
+        padding: 4rem 1.5rem 2rem 1.5rem;
+    }
+
+    .signup-form{
+        max-width: 65%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .login-form{
+        max-width: 75%;
+        padding: 4rem 1.5rem 2rem 1.5rem;
+    }
+
+    .signup-form{
+        max-width: 75;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .login-form{
+        max-width: 75%;
+        padding: 4rem 1.5rem 2rem 1.5rem;
+    }
+
+    .signup-form{
+        max-width: 80%;
+        padding: 4rem 1.5rem 2rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .login-form{
+        margin: 8rem 0 0 0;
+        max-width: 100%;
+        padding: 4rem 1rem 2rem 1rem;
+    }
+
+    .signup-form{
+        margin: 8rem 0 0 0;
+        max-width: 100%;
+        padding: 4rem 1rem 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .signup-form, .login-form{
+        margin: 8rem 0 0 0;
+        max-width: 100%;
+        padding: 4rem 0.5rem 2rem 0.5rem;
+    }
+}

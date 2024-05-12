@@ -1,0 +1,163 @@
+.signup-form, .login-form {
+  background-color: #FBFAFA;
+  max-width: 40%;
+  margin: 8rem auto;
+  padding: 4rem 2rem 2rem 2rem;
+  border-radius: 0.5rem;
+  border: solid 2px black;
+}
+.signup-form h1, .login-form h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: "Abril Fatface";
+}
+.signup-form label, .login-form label {
+  font-size: 1rem;
+  font-weight: 450;
+}
+.signup-form > div, .login-form > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 0.75rem;
+}
+.signup-form .passwordInput > div, .login-form .passwordInput > div {
+  position: relative;
+}
+.signup-form .passwordInput > div img, .login-form .passwordInput > div img {
+  cursor: pointer;
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+}
+.signup-form .passwordInput > div a, .login-form .passwordInput > div a {
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0.5rem;
+  color: #1F83CB;
+  font-size: 0.75rem;
+  text-align: right;
+  cursor: pointer;
+  transition: all 100ms;
+}
+.signup-form .passwordInput > div a:hover, .login-form .passwordInput > div a:hover {
+  color: #1F3B98;
+  font-weight: 500;
+  transform: translateX(0);
+}
+.signup-form input, .login-form input {
+  width: 98%;
+  border-radius: 0.5rem;
+  border: 1px solid darkgray;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+  border: solid 1px black;
+  box-shadow: 1px 1px 5px lightgray;
+  font-size: 0.9rem;
+}
+.signup-form .account, .login-form .account {
+  text-align: center;
+}
+.signup-form .account button, .login-form .account button {
+  margin: 3rem auto 2rem auto;
+  padding: 0.35rem 3rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: #1F3B98;
+  color: white;
+  box-shadow: 1px 1px 5px lightgray;
+  transition: transform 1s;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.signup-form .account button:hover, .login-form .account button:hover {
+  background: #284bc2;
+}
+.signup-form .account button:active, .login-form .account button:active {
+  background: #1b3383;
+}
+.signup-form .account p, .login-form .account p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+.signup-form .account p a, .login-form .account p a {
+  color: #1F3B98;
+  text-underline-offset: 0.1rem;
+}
+.signup-form .account p a:hover, .login-form .account p a:hover {
+  opacity: 0.75;
+}
+
+.resetPass > p:first-of-type {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.resetPass .account button {
+  margin: 2rem auto 2rem auto;
+}
+
+@media only screen and (max-width: 1100px) {
+  .signup-form {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .login-form {
+    max-width: 50%;
+  }
+  .signup-form {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .login-form {
+    max-width: 65%;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+  .signup-form {
+    max-width: 65%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-form {
+    max-width: 75%;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+  .signup-form {
+    max-width: 75;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .login-form {
+    max-width: 75%;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+  .signup-form {
+    max-width: 80%;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .login-form {
+    margin: 8rem 0 0 0;
+    max-width: 100%;
+    padding: 4rem 1rem 2rem 1rem;
+  }
+  .signup-form {
+    margin: 8rem 0 0 0;
+    max-width: 100%;
+    padding: 4rem 1rem 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .signup-form, .login-form {
+    margin: 8rem 0 0 0;
+    max-width: 100%;
+    padding: 4rem 0.5rem 2rem 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=Forms.css.map */

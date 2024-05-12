@@ -1,0 +1,268 @@
+@import "colours";
+
+#profile{
+    margin-top: 6rem;
+
+    > div.heading{
+        display: flex;
+        column-gap: 3rem;
+        align-items: center;
+        padding-left: 2rem;
+
+        h1{
+            font-size: 3.5rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+        }
+
+        img{
+            width: 1.25rem;
+            height: auto;
+            cursor: pointer;
+        }
+
+        img:hover{
+            scale: 1.05;
+        }
+    }
+
+    main{
+        padding: 0 6rem;
+
+        > div:nth-of-type(1){
+            margin: 3rem 0 2rem 0;
+
+            img{
+                width: 7rem;
+                border-radius: 50%;
+                border: solid 1px black;
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            max-width: 60%;
+            
+            .inputItem{
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.45rem;
+
+
+                label{
+                    font-weight: 450;
+                    font-size: 1.0rem;
+                }
+
+                input{
+                    background: $gray_card;
+                    outline: none;
+                    border: solid 1px black;
+                    padding: 0.25rem 0.75rem;
+                    font-size: 1rem;
+                    color: black;
+                    border-radius: 0.25rem;
+                    font-weight: 450;
+                }
+
+                p{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+
+                button{
+                    border: none;
+                    background: $dark_blue;
+                    color: white;
+                    font-weight: 600;
+                    padding: 0.25rem 2rem;
+                    border-radius: 0.25rem;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+
+                button.blue{
+                    background: $dark_blue;
+                }
+    
+                button:hover{
+                    background: $mid_blue;
+                }
+    
+                button:active{
+                    background: black;
+                }
+    
+                button.red{
+                    background: red;
+                }
+
+                button.red:hover{
+                    background: lighten(red, 15);
+                }
+
+                button.red:active{
+                    background: darken(red, 5);
+                }
+            }
+        }
+
+        .main.red{
+            margin-top: 10rem;
+            background: red;
+        }
+
+        .red:hover{
+            background: lighten(red, 15);
+        }
+
+        .red:active{
+            background: darken(red, 5);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #profile{
+
+        main{
+
+            form{
+                max-width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #profile{
+
+        main{
+
+            form{
+                max-width: 75%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #profile{
+
+        main{
+
+            form{
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    #profile{
+
+        main{
+
+            form{
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    #profile{
+
+        main{
+
+            form{
+                max-width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    #profile{
+
+        > div.heading{
+
+            h1{
+                display: none;
+            }
+
+            img{
+                width: 2rem;
+            }
+        }
+
+        main{
+            padding: 0 2rem;
+
+            > div:nth-of-type(1){
+                margin: 2rem 0 3rem 0;
+                display: flex;
+                justify-content: center;
+    
+                img{
+                    width: 8rem;
+                    border-radius: 50%;
+                    text-align: center;
+                    border: solid 1px black;
+                }
+            }
+
+            form{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    #profile{
+
+        > div.heading{
+            padding-left: 1rem;
+        }
+
+        main{
+            padding: 0 1rem;  
+            
+            form{
+
+                .buttons{
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    #profile{
+
+        > div.heading{
+            padding-left: 0.5rem;
+        }
+
+        main{
+            padding: 0 0.5rem;
+            
+            form{
+
+                .buttons{
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

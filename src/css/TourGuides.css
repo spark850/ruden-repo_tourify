@@ -1,0 +1,157 @@
+#tour_guides .start {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  margin-top: 4rem;
+}
+#tour_guides .start img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+#tour_guides .start h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 3;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 4px 4px black;
+}
+
+.tour_guides {
+  margin: 4rem 0 0 0;
+}
+.tour_guides > p {
+  width: 70%;
+  margin: 1rem auto 3.5rem auto;
+}
+.tour_guides .guides {
+  display: flex;
+  column-gap: 8.5rem;
+  justify-content: center;
+  width: 100%;
+  margin: 4rem auto 8rem auto;
+  flex-wrap: wrap;
+  row-gap: 6rem;
+}
+.tour_guides .guides .tourGuideItem {
+  background: #FBFAFA;
+  border: solid 2px black;
+  position: relative;
+  padding: 4.5rem 0 4rem 0;
+  border-radius: 1rem;
+  max-width: 363px;
+  height: 470px;
+  text-align: center;
+}
+.tour_guides .guides .tourGuideItem .person {
+  position: absolute;
+  width: 70px;
+  border: solid 2px #1F83CB;
+  border-radius: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+}
+.tour_guides .guides .tourGuideItem .fname {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.5rem;
+}
+.tour_guides .guides .tourGuideItem .statement {
+  margin: 2rem auto 0 auto;
+  font-size: 1.1rem;
+  width: 70%;
+  line-height: 1.4;
+  position: relative;
+  text-align: justify;
+}
+.tour_guides .guides .tourGuideItem .q1 {
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+}
+.tour_guides .guides .tourGuideItem .q2 {
+  position: absolute;
+  right: -2rem;
+  bottom: -1rem;
+}
+.tour_guides .guides .tourGuideItem .phone {
+  color: #1F3B98;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 3rem 0 0 0;
+}
+.tour_guides .guides .tourGuideItem .specialty {
+  color: #1F3B98;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.qna .questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 8rem;
+  column-gap: 13.5rem;
+  margin: 4rem auto 8rem auto;
+}
+.qna .questions .qnaItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 4.5rem 2.5rem 2.5rem 2.5rem;
+  background: #1F3B98;
+  color: white;
+  width: 569px;
+  height: 376px;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.qna .questions .qnaItem .question {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.qna .questions .qnaItem .answer {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.how-to p {
+  margin: 2rem auto 8rem auto;
+}
+
+@media screen and (max-width: 600px) {
+  #tour_guides .start {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .qna .questions .qnaItem {
+    padding: 4.5rem 2rem 2.5rem 2rem;
+    width: 100%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #tour_guides .guides .tourGuideItem {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #tour_guides .guides .tourGuideItem {
+    height: 520px;
+  }
+  .qna .questions .qnaItem {
+    padding: 4.5rem 1.5rem 3rem 1.5rem;
+    width: 100%;
+    height: 450px;
+  }
+}
+
+/*# sourceMappingURL=TourGuides.css.map */

@@ -1,0 +1,10 @@
+possible queries
+
+// locations 
+type in order of highest rating
+category in order of highest rating
+
+// reviews
+get most recent reviews from a location 
+
+recent reviews starting with those with the highest rating

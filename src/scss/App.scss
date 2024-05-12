@@ -1,0 +1,109 @@
+@import "colours";
+@import "index";
+@import "Home";
+@import "Category";
+@import "TourGuides";
+@import "ContactUs";
+@import "Forms";
+@import "Profile";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+button{
+    width: fit-content;
+}
+
+h1{
+    font-family: "Abril Fatface", serif;
+    font-size: 2rem;
+    letter-spacing: 0.01rem;
+}
+
+select{
+    padding-right: 0;
+    background: url('../assets/icons/angle_down.svg') no-repeat 95% 55%;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    appearance: none;
+    background-size: 0.75rem;
+    position: relative !important;
+    background-color: white;
+
+    option{
+        background: white;
+        padding: 1rem;
+        color: white;
+    }
+
+    option::after{
+        display: none;
+    }
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+button.main{
+    background: $dark_blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1.2rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button.main:hover{
+    background: $mid_blue;
+}
+
+button.main:active{
+    background: black;
+}
+
+main{
+    padding: 0 2rem;
+
+    > p:nth-of-type(1){
+        font-size: 1.1rem;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 12rem;
+    }
+    
+    main{
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 365px){
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 16.5rem;
+    }
+
+    main{
+        padding: 0 0.5rem;
+    }
+}
